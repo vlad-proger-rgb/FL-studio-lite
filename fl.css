@@ -1,0 +1,107 @@
+body {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+
+    --max-pixels: 1200;
+    --up-down-hidden: hidden;
+}
+
+.toolbar {
+    position: fixed;
+    width: 99%;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #bdbdbd;
+}
+.tools {
+    display: flex;
+    list-style: none;
+}
+.tools > li {
+    background-color: bisque;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.sheet {
+    position: absolute;
+    width: 99%;
+    height: 70%;
+    top: 20%;
+    border-radius: 10px;
+    margin: 5px;
+    overflow-x: auto;
+    background-color: antiquewhite;
+}
+
+
+.bottom-toolbar {
+    position: absolute;
+    top: 91%;
+    background-color: #bdbdbd;
+    width: 99%;
+    padding: 5px;
+}
+
+
+.up-down > span {
+    visibility: var(--up-down-hidden);
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.layer {
+    position: relative;
+    width: var(--max-pixels);
+    border-radius: 5px;
+    height: 50px;
+    background-color: burlywood;
+    margin: 5px;
+}
+
+.sound {
+    position: absolute;
+    border-radius: 5px;
+    height: 40px;
+    width: min-content;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: beige;
+}
+.position-pixels > span:hover {
+    color: red;
+}
+
+.sound-file {
+    position: relative;
+    transition: all 0.3s;
+    user-select: none;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+}
+
+.sound-file:hover {
+    background-color: chocolate;
+}
+
+
+.sound-but {
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.sound-but:hover {
+    background-color: red;
+}
+

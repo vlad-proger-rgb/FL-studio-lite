@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./fl.css" rel="stylesheet" type="text/css">
+    <script src="./fl.js" rel="javascript" type="text/javascript" defer></script>
+    <title>FL Studio Lite</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="toolbar">
+            FL Studio Lite
+            <div class="inner-toolbar">
+                <ul class="tools">
+                    <li class="position-pixels">
+                        pos in pixels<br>
+                        <span onclick="moveLeftOrRight('lll')"><<<</span>
+                        <span onclick="moveLeftOrRight('ll')"><<</span>
+                        <span onclick="moveLeftOrRight('l')"><</span>
+
+                        <span class="position-pixels-number">100</span> px
+
+                        <span onclick="moveLeftOrRight('r')">></span>
+                        <span onclick="moveLeftOrRight('rr')">>></span>
+                        <span onclick="moveLeftOrRight('rrr')">>>></span>
+                    </li>
+                    <li>
+                        selected: <span id="selected-item">None</span>
+                    </li>
+                    <li onclick="deleteSelectedItem()">
+                        delete selected-item
+                    </li>
+                    <li class="add-layer" onclick="addLayer()">
+                        Add Layer +
+                    </li>
+                    <li class="play" onclick="Play()">
+                        Play!
+                    </li>
+                    <li class="export-music">
+                        Export music
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sheet">
+            <div class="inner-sheet"></div>
+        </div>
+
+        <div class="bottom-toolbar">
+            <div class="inner-bottom-toolbar">
+                <!-- <span class="sound-file">
+                    <span class="sound-but" onclick="addSound(files[i])">+</span>
+                    <span class="sound-but">></span>
+                </span> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
